@@ -20,13 +20,14 @@ export function HeroSection() {
 
             {/* Gradient Overlay */}
             <div
-                className='absolute inset-0 pointer-events-none'
+                className='absolute inset-0 pointer-events-none z-5'
                 style={{
                     background:
-                        'linear-gradient(180deg, rgba(255,255,255,0.9) 0%, rgba(240,245,255,0.7) 40%, rgba(200,220,245,0.6) 100%)',
+                        'linear-gradient(to top, rgba(200,220,245,0.6) 0%, rgba(240,245,255,0.5) 40%, rgba(255,255,255,0.4) 100%)',
                 }}
             />
-            <div className='absolute inset-0 bg-black/30 z-5'></div>
+            <div className='absolute inset-0 bg-black/40 z-5'></div>
+            <div className='absolute inset-0 bg-white/30 z-5'></div>
 
             {/* Content */}
             <div className='relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center'>
@@ -35,7 +36,7 @@ export function HeroSection() {
                         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
                     }`}
                 >
-                    <h1 className='font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-[#101828] leading-tight text-balance'>
+                    <h1 className='font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-primary leading-tight text-balance'>
                         Exploring Market Depth With Scientific Precision.
                     </h1>
                 </div>
